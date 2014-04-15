@@ -21,6 +21,10 @@ public class Task2 {
      * @return тот же массив "array", в котором удалены указанные элементы
      */
     public int[] remove(int array[], int m, int n) {
+        int x = n-m;
+        for(; m<array.length-x;m++){
+        array[m] =array[m+x];      
+        }
         return array;
     }
 }

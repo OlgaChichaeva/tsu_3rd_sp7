@@ -1,6 +1,7 @@
 package w4;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -22,14 +23,16 @@ public class SinglyLinkedList {
      * @return
      */
     public Integer pop_back() {
-        throw new RuntimeException("list is empty!");
-    
+       
+       // throw new RuntimeException("list is empty!");
+        Integer remove = list.remove(list.lastIndexOf(this));
+       return remove;
     }
 
     /**
      * Сортирует односвязный список.
      */
     public void sort() {
-
+     Collections.sort(list);
     }
 }
